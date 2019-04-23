@@ -5,9 +5,11 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('milestones').insert([
-        {id: 1, description: 'went to the moon'},
-        {id: 2, description: 'won a gold medal'},
-        {id: 3, description: 'best actor award'}
+        { description: 'went to the moon',
+        date_achieved: '1993-12-12'},
+        
+         { description: 'won a gold medal'},
+        { description: 'best actor award'}
       ]);
     });
 };
